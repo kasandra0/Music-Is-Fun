@@ -7,20 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Is Fun!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
-            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-        </div>
-    </form>
-    <div id="songs">
+    <div class="container-fluid main-container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                <form class=" form-inline form-pos" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                    <!----DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM---->
+                    <div class="form-group">
+                        <input id="input-artist" type="text" class="form-control" name="artist" placeholder="Search Artist" />
+                        <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+                    </div>
+                    <!-- ---------CODEWORKS--------------------------------------------- -->
+            <!-- <input style="font-size: 48px; width: 3em;" value="big"> -->
+                </div>
+            </form>
+            <div id="songs">
 
+            </div>
+        </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="module" src="main.js"></script>
 </body>
