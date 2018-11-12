@@ -7,26 +7,33 @@ body{
   background-image: url("https://images.unsplash.com/photo-1533109721025-d1ae7ee7c1e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=610919124dcd3cc1a8fbc12779531030&auto=format&fit=crop&w=1950&q=80");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgb(77, 188, 252);
   background-attachment: fixed;
 
 }
-audio{
-/* margin:1px;
-border-radius: 1px; */
+.title-text{
+  /* font-family: 'Cedarville Cursive', cursive; */
+  font-family: 'League Script', cursive;
+  font-size: 900%;
+  text-shadow: 0px 0px 10px rgba(251, 145, 255, 0.9);
+  color: rgb(248, 19, 198);
+  font-weight: 900;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .form-pos{
   display: flex;
-  /* flex-direction: column; */
+  flex-wrap: wrap;
   justify-content: center;
-  /* align-items: center; */
-
+  height: 15vh;
 }
 #song-card{
   /* background-color: rgb(117, 117, 117); */
   margin: 10px;
   padding: 2%;
   height: 400px;
+  max-width: 300px;
 }
 #songs{
   display: flex;
@@ -34,12 +41,12 @@ border-radius: 1px; */
   justify-content: center;
 }
 
-#input-artist{
-  font-size: 48px;
+.input-artist, .input-artist:focus, .input-artist:active {
+  font-size: 24px;
   width: 10em;
   height: fit-content;
-border: none;
-background-color: rgba(255,255,255,0);
-color: white;
-box-shadow: none;
+  border: none;
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+  box-shadow: none;
 }
